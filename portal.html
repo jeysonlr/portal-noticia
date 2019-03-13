@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal do Jeyson</title>
+    <link rel="stylesheet" href="portal.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="topo">
+        <div class="topoint">
+            <div class="topoleft">
+                <ul>
+                    <li><a href="./" class="ativo">Home</a></li>
+                    <li><a href="quem-somos">Quem Somos</a></li>
+                    <li><a href="anuncie-aqui">Anuncie Aqui</a></li>
+                    <li><a href="contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="toporight">
+                <input type="image" src="lupa.png" width="26" height="26">
+                <input type="text" name="busca" class="topobusca" placeholder="Busca...">
+                <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" width="26" height="26" title="YOUTUBE"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="twitter.png" width="26" height="26" title="TWITTER"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" width="26" height="26"
+                        title="FACEBOOK"></a>
+                <a href="https://plus.google.com/discover" target="_blank"><img src="googleplus.png" width="26" height="26"
+                        title="GOOGLE PLUS"></a>
+                <a href="https://rss.com/" target="_blank"><img src="rss.png" width="26" height="26" title="RSS"></a>
+            </div>
+        </div>
+    </div>
+    <div class="topo2">
+        <div class="topoint2">
+            <div class="logo"><img src="logo.png" width="230"></div>
+            <div class="banner"><img src="portalaaaaaa.png"></div>
+        </div>
+        <div class="menu">
+            <div class="menuint">
+                <img src="menu.png" width="40" height="40" class="menumobile" onclick="toggleMenu()">
+                <ul id="menu">
+                    <li><a href="./"> Home</a></li>
+                    <li><a href="economia">Economia</a></li>
+                    <li>
+                        <a href="entretenimento">Entretenimento</a>
+                        <img src="imagem1.png" width="10">
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 1</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 2</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 3</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 4</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 5</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="esportes">Esportes</a>
+                        <img src="imagem1.png" width="10">
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 1</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 2</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 3</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="geral">Geral</a></li>
+                    <li>
+                        <a href="noticias">Noticias</a>
+                        <img src="imagem1.png" width="10">
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 1</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 2</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 3</div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">Sub menu 4</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="policia">Policia</a></li>
+                    <li><a href="video">Video</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ultimasnoticias">
+            <div class="ultimasnoticiasint">
+                <div class="ultnoticiasarea">
+                    <div class="ultnoticiastitulo">ÚLTIMAS NOTÍCIAS</div>
+                    <div class="ultnotiniasnoticia">Qualquer noticia que ira aparecer aqui</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containerint">
+                <div class="leftside">
+                    <div class="slideshow" id="slideshow">
+                        <div class="slidebolinhas">
+                            <div class="bolinha" onclick="mudarSlide(this.id)" id="0"></div>
+                            <div class="bolinha" onclick="mudarSlide(this.id)" id="1"></div>
+                            <div class="bolinha" onclick="mudarSlide(this.id)" id="2"></div>
+                            <div class="bolinha" onclick="mudarSlide(this.id)" id="3"></div>
+                        </div>
+                        <div class="slideshowarea">
+                            <a href="https://www.google.com.br" target="blank">
+                                <div class="slide" style="background-image:url('https://www.google.com.br/google.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Título de teste 1</div>
+                                        <div class="slideinfo_subtitulo">Subtítulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.google.com.br" target="blank">
+                                <div class="slide" style="background-image:url('https://www.google.com.br/google.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Título de teste 2</div>
+                                        <div class="slideinfo_subtitulo">Subtítulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.google.com.br" target="blank">
+                                <div class="slide" style="background-image:url('https://www.google.com.br/google.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Título de teste 3</div>
+                                        <div class="slideinfo_subtitulo">Subtítulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.google.com.br" target="blank">
+                                <div class="slide" style="background-image:url('https://www.google.com.br/google.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Título de teste 4</div>
+                                        <div class="slideinfo_subtitulo">Subtítulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">NOTÍCIAS</div>
+                        <div class="widget_conteudo">
+                            <a href="https://www.google.com.br" target="blank">
+                                <div class="noticiaarea1">
+                                    <div class="noticiaitem noticiabig">
+                                        <div class="noticiaimagem">
+                                            <img src="" width="80" height="80">
+                                        </div>
+                                        <div class="noticiatitulo">Algum titulo qualquer. Algum titulo qualquer.</div>
+                                        <div class="noticiainfo">500 comentários</div>
+                                        <div class="noticiaa">Corpo do texto da notícia em si. Corpo do texto da
+                                            notícia em si. Corpo do texto da notícia em si. Corpo do texto da notícia
+                                            em si.</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="noticiaarea2">
+                                <a href="https://www.google.com.br" target="balnk">
+                                    <div class="noticiaitem">
+                                        <div class="noticiaimagem">
+                                            <img src="" width="80" height="80">
+                                        </div>
+                                        <div class="noticiatitulo">Algum titulo qualquer.</div>
+                                        <div class="noticiainfo">500 comentários</div>
+                                    </div>
+                                </a>
+                                <div class="noticiaarea2">
+                                    <a href="https://www.google.com.br" target="balnk">
+                                        <div class="noticiaitem">
+                                            <div class="noticiaimagem">
+                                                <img src="" width="80" height="80">
+                                            </div>
+                                            <div class="noticiatitulo">Algum titulo qualquer.</div>
+                                            <div class="noticiainfo">500 comentários</div>
+                                        </div>
+                                    </a>
+                                    <div class="noticiaarea2">
+                                        <a href="https://www.google.com.br" target="balnk">
+                                            <div class="noticiaitem">
+                                                <div class="noticiaimagem">
+                                                    <img src="" width="80" height="80">
+                                                </div>
+                                                <div class="noticiatitulo">Algum titulo qualquer.</div>
+                                                <div class="noticiainfo">500 comentários</div>
+                                            </div>
+                                        </a>
+                                        <div class="noticiaarea2">
+                                            <a href="https://www.google.com.br" target="blank">
+                                                <div class="noticiaitem">
+                                                    <div class="noticiaimagem">
+                                                        <img src="" width="80" height="80">
+                                                    </div>
+                                                    <div class="noticiatitulo">Algum titulo qualquer.</div>
+                                                    <div class="noticiainfo">500 comentários</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">ESPORTES</div>
+                        <div class="widget_conteudo">
+                            <a href="https://www.google.com.br" target="blank">
+                                <div class="noticiaarea1">
+                                    <div class="noticiaitem noticiabig">
+                                        <div class="noticiaimagem">
+                                            <img src="" width="80" height="80">
+                                        </div>
+                                        <div class="noticiatitulo">Algum titulo qualquer. Algum titulo qualquer.</div>
+                                        <div class="noticiainfo">500 comentários</div>
+                                        <div class="noticiaa">Corpo do texto da notícia em si. Corpo do texto da
+                                            notícia em si. Corpo do texto da notícia em si. Corpo do texto da notícia
+                                            em si.</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="noticiaarea2">
+                                <a href="https://www.google.com.br" target="balnk">
+                                    <div class="noticiaitem">
+                                        <div class="noticiaimagem">
+                                            <img src="" width="80" height="80">
+                                        </div>
+                                        <div class="noticiatitulo">Algum titulo qualquer.</div>
+                                        <div class="noticiainfo">500 comentários</div>
+                                    </div>
+                                </a>
+                                <div class="noticiaarea2">
+                                    <a href="https://www.google.com.br" target="balnk">
+                                        <div class="noticiaitem">
+                                            <div class="noticiaimagem">
+                                                <img src="" width="80" height="80">
+                                            </div>
+                                            <div class="noticiatitulo">Algum titulo qualquer.</div>
+                                            <div class="noticiainfo">500 comentários</div>
+                                        </div>
+                                    </a>
+                                    <div class="noticiaarea2">
+                                        <a href="https://www.google.com.br" target="balnk">
+                                            <div class="noticiaitem">
+                                                <div class="noticiaimagem">
+                                                    <img src="" width="80" height="80">
+                                                </div>
+                                                <div class="noticiatitulo">Algum titulo qualquer.</div>
+                                                <div class="noticiainfo">500 comentários</div>
+                                            </div>
+                                        </a>
+                                        <div class="noticiaarea2">
+                                            <a href="https://www.google.com.br" target="blank">
+                                                <div class="noticiaitem">
+                                                    <div class="noticiaimagem">
+                                                        <img src="" width="80" height="80">
+                                                    </div>
+                                                    <div class="noticiatitulo">Algum titulo qualquer.</div>
+                                                    <div class="noticiainfo">500 comentários</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="widget">
+                        <div class="widget_titulo">SOCIAL</div>
+                        <div class="widget_conteudo">
+                            <a href="https://rss.com/" target="_blank"><img src="rss.png" width="26" height="26" title="RSS"></a>
+                            <a href="https://plus.google.com/discover" target="_blank"><img src="googleplus.png" width="26"
+                                    height="26" title="GOOGLE PLUS"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" width="26"
+                                    height="26" title="FACEBOOK"></a>
+                            <a href="https://twitter.com/" target="_blank"><img src="twitter.png" width="26" height="26"
+                                    title="TWITTER"></a>
+                            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" width="26" height="26"
+                                    title="YOUTUBE"></a>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">ÚLTIMAS NOTÍCIAS</div>
+                        <div class="widget_conteudo">
+                            <div class="noticia_item"><a href="https://economia.uol.com.br/noticias/estadao-conteudo/2018/11/29/novo-texto-da-reforma-sera-enviado-no-inicio-do-mandato-diz-bolsonaro.htm">Novo
+                                    texto da reforma será enviado no início do mandato, diz Bolsonaro...</a></div>
+                            <div class="noticia_item"><a href="https://universa.uol.com.br/noticias/redacao/2018/11/29/esconder-o-capo-8-coisas-que-so-quem-tem-a-pepeca-gordinha-sabe.htm">Esconder
+                                    o capô? 8 coisas que só quem tem a pepeka gordinha sabe.</a></div>
+                            <div class="noticia_item"><a href="https://www.uol/noticias/conteudo-publicitario/escola-concept-aprendizagem-significativa-.htm?utm_source=uolgeral&utm_medium=tvhome#educacao-de-primeiro-mundo">Educação
+                                    de primeiro mundo Conheça a Escola Concept e sua proposta absolutamente
+                                    inovadora...</a></div>
+                            <div class="noticia_item"><a href="https://economia.uol.com.br/cotacoes/noticias/redacao/2018/11/29/dolar-bolsa-fechamento.htm">Bolsa
+                                    emenda 3ª alta e atinge novo recorde; dólar sobe e fecha a R$3,857...</a></div>
+                            <div class="noticia_item"><a href="https://www1.folha.uol.com.br/esporte/2018/11/conmebol-nega-pedido-do-boca-e-confirma-final-da-libertadores.shtml">Conmebol
+                                    nega pedido do Boca e confirma final da Libertadores</a></div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">PUBLICIDADE</div>
+                        <div class="widget_conteudo"><a href="https://www.zattini.com.br/lst/flash-black?campaign=netpro_displaycc&utm_source=uol_p2&utm_medium=p2&utm_campaign=::N3T:DP-UO-P2-00-00-TD:N3T::&utm_content=fbf&dclid=CJndkbrk-t4CFVILhgod_6IG3Q"><img
+                                    src="https://s0.2mdn.net/8229649/300x250_FBF_01.gif" alt="Advertisement" border="0"
+                                    width="275" height="250"></a></div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">ENCONTRE-NOS NO FACEBOOK</div>
+                        <div class="widget_conteudo"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fesporteinterativo%2F%3Fepa%3DSEARCH_BOX&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=759965411003547"
+                                width="275" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                                allowTransparency="true" allow="encrypted-media"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
